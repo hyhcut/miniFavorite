@@ -23,6 +23,7 @@ export default {
       logs.unshift(Date.now())
       mpvue.setStorageSync('logs', logs)
     }
+    wx.hideTabBar();
   },
   log () {
     console.log(`log at:${Date.now()}`)
